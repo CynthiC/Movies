@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword,  } from 'firebase/auth';
 import { auth } from '../firebase-config';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { redirect, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase-config'
 
@@ -23,8 +23,9 @@ export default function Register() {
       alert("Account Created")
       navigate('/')
       console.log(user.user.uid);
-      const docuRef= doc(db, `usuarios/${user.user.uid}`);
+      const docuRef= doc(db, `User/${user.user.uid}`);
       setDoc(docuRef,{correo:email, rol:"usuario"});
+      console.log('creado en bd')
     }catch(error){
       toast.error(error.message);
     }

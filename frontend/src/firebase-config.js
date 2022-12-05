@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 
 
 export const firebaseConfig= {
-  apiKey: "AIzaSyARwgxOakGeTGGNLOEFHn-0TxPzS9GxDvc",
-  authDomain: "videgamesapp.firebaseapp.com",
-  projectId: "videgamesapp",
-  storageBucket: "videgamesapp.appspot.com",
-  messagingSenderId: "16090400600",
-  appId: "1:16090400600:web:a9f7ec41a47a2161be872d",
-  measurementId: "G-FQKL7T20NY"
+  apiKey: "AIzaSyAQ3rxLnH9gP9wV92jN1PF3xmxuA0PWkvw",
+  authDomain: "cineapp-f29d7.firebaseapp.com",
+  projectId: "cineapp-f29d7",
+  storageBucket: "cineapp-f29d7.appspot.com",
+  messagingSenderId: "1066097970728",
+  appId: "1:1066097970728:web:fa080d156482b78fccef1d",
+  measurementId: "G-8CWCCBVKEX"
 };
 
 
